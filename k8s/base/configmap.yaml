@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: inference-sim-config
+  namespace: k8s-inference-sim
+data:
+  INFER_MS: "80"
+  BUSY_WAIT: "1"
+  READY_DELAY: "2"
+  SHUTDOWN_GRACE: "5"
