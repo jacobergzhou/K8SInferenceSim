@@ -22,7 +22,7 @@ def busy_work(ms: int):
             x += 1.0  # meaningless math to burn CPU
         return x
     else:
-        time.sleep(ms / 1000.0)
+        time.sleep(ms / 1000.0) # when sleep, process does not consume CPU
 
 def _startup_delay():
     global _ready
