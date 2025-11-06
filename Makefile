@@ -15,7 +15,7 @@ kind-load:
 
 deploy:
 	kubectl apply -k k8s/overlays/dev
-	kubectl -n $(NS) rollout status deploy/inference-sim --timeout=120s
+	kubectl -n $(NS) rollout status deploy/dev-inference-sim --timeout=120s
 	kubectl -n $(NS) get pods
 
 undeploy:
